@@ -17,7 +17,6 @@ function App() {
       <React.Fragment>
       <NavBar />
       <SideBar />
-      <main className='container'>
       <Switch>
       <Route exact path= '/home' component={Home}/>
       <Route exact path= '/product' component={ProductList}/>
@@ -26,8 +25,7 @@ function App() {
       <Redirect exact from='/' to='/home'/>
       <Redirect to='/not-found'/>
       </Switch>
-      </main>
-      <Footer />
+      {/* <Footer /> */}
       </React.Fragment>
     </div>
   );
