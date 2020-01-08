@@ -20,6 +20,7 @@ function App() {
       <Switch>
       <Route exact path= '/home' component={Home}/>
       <Route exact path= '/product' component={ProductList}/>
+      <Route exact path='/product/new' component={ProductForm} />
       <Route exact path='/product/:id' component={ProductForm} />
       <Route path='/not-found' component={NotFound}/>
       <Redirect exact from='/' to='/home'/>

@@ -21,6 +21,7 @@ class SideBar extends Component {
                       to={link.path}
                       className="sidebar-link"
                       onClick={handleSidebar}
+                      replace
                     >
                      <div>{link.isIcon}   {link.text}</div>
                     </Link>
